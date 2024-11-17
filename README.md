@@ -25,11 +25,11 @@ The chatbot leverages youth policy data from [Ontong Youth](https://www.youthcen
 ## Project Structure
 
 ```
-youth_policy
+youth-policy-chatbot
 ├─ chatbot.py
 ├─ data
 │  ├─ chromadb.py
-│  ├─ crawling_words.ipynb
+│  ├─ words_crawling.ipynb
 │  ├─ layout_analyzer.py
 │  └─ policy_crawling_and_attached_file_save.py
 ├─ download_db.py

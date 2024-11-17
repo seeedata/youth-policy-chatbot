@@ -1,32 +1,31 @@
-# 청년정책 추천 챗봇
+# Youth Policy Chatbot
 
-## 프로젝트 개요
+## Project Overview
 
-청년정책 추천 챗봇은 사용자가 거주지, 나이, 취업 상태 등과 같은 개인 정보를 입력하면 맞춤형 청년정책을 추천해주는 실시간 대화형 챗봇 서비스입니다. 이 프로젝트는 지속적인 대화를 통해 사용자가 복잡한 정책 정보를 쉽게 이해하고, 자신에게 맞는 정책을 간편하게 선택할 수 있도록 돕는 것을 목표로 합니다.
+The Youth Policy Chatbot is a real-time interactive chatbot service that recommends personalized youth policies based on user-provided information such as residence, age, and employment status. This project aims to help users easily understand complex policy information through continuous conversations and assist them in conveniently selecting policies that suit their needs.
 
-이 챗봇은 대한민국 공식 전자정부 웹사이트인 [온통청년](https://www.youthcenter.go.kr/main.do)의 청년정책 데이터를 기반으로 하여, 지역별, 연령별, 상황에 맞는 정책을 빠르게 제공하며, 정책의 상세한 내용도 함께 안내합니다. Gradio 인터페이스를 사용해 웹 브라우저에서 손쉽게 챗봇을 사용할 수 있으며, 직관적인 대화 형식으로 누구나 쉽게 접근할 수 있습니다.
+The chatbot leverages youth policy data from [Ontong Youth](https://www.youthcenter.go.kr/main.do), the official e-government website of South Korea, to provide fast and tailored recommendations based on region, age, and personal circumstances. It also offers detailed policy information. With a Gradio interface, the chatbot can be easily accessed via a web browser, offering an intuitive and user-friendly conversational experience.
 
-### 주요 기능
+### Key Features
 
-1. 개인 맞춤형 정책 추천
+1. **Personalized Policy Recommendations**
 
-    - 사용자가 거주지, 나이, 취업상태 등의 개인정보를 입력하면 가장 관련성이 높은 정책 추천
+    - Recommends the most relevant policies based on user-provided details such as residence, age, and employment status.
+   
+    - Provides comparisons between similar policies.
 
-    - 유사한 정책 간 비교
+2. **Detailed Policy Information**
+   
+    - Answers user queries about specific policies, such as application periods, eligibility requirements, and necessary documentation, by retrieving relevant information from policy documents.
 
-2. 정책 세부사항 제공
+3. **Policy Terminology Explanations**
 
-    - 사용자가 특정한 정책의 신청 기간, 자격 요건, 필수 지원 서류 등을 질문하면 관련 문서에서 해당 내용을 찾아 답변 제공
-
-3. 정책용어 설명
-
-    - 정책 정보에 포함된 어려운 용어에 대한 부가적인 설명 제공
+   - Offers additional explanations for difficult terms included in policy information.
 
 ## Project Structure
 
 ```
 youth_policy
-├─ .gitignore
 ├─ chatbot.py
 ├─ data
 │  ├─ chromadb.py

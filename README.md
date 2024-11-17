@@ -44,7 +44,7 @@ youth-policy-chatbot
     Clone the repository to your local machine using the following command:
 
     ```bash
-    git clone https://github.com/junhyeok9/youth_policy.git
+    git clone https://github.com/seeedata/youth-policy-chatbot.git
     ```
 
 
